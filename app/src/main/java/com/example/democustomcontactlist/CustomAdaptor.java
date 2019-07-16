@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,10 +29,12 @@ public class CustomAdaptor extends ArrayAdapter {
         TextView textViewName=rowView.findViewById(R.id.textViewName);
         TextView textViewCode=rowView.findViewById(R.id.textViewCountryCode);
         TextView textViewNumber=rowView.findViewById(R.id.textViewContactNum);
+        ImageView ivGender=rowView.findViewById(R.id.tvGender);
         AndroidVersion currentVersion=versionList.get(position);
         textViewName.setText(currentVersion.getName());
         textViewCode.setText(currentVersion.getCc());
         textViewNumber.setText(currentVersion.getContact()+"");
+        ivGender.setImageResource(R.drawable.female);
         return rowView;
     }
 }

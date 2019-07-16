@@ -4,4 +4,5 @@
     <string name="nm">Name</string>
     <string name="cd">Code</string>
     <string name="num">Number</string>
+    <string name="gen">Gender</string>
 </resources>

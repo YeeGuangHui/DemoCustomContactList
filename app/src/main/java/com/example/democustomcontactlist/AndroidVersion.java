@@ -2,10 +2,11 @@ package com.example.democustomcontactlist;
 
 class AndroidVersion {
 
-    public AndroidVersion(String name, int cc, int contact) {
+    public AndroidVersion(String name, int cc, int contact, char gender) {
         this.name = name;
         this.cc = cc;
         this.contact = contact;
+        this.gender=gender;
     }
 
     public String getName() {
@@ -32,9 +33,18 @@ class AndroidVersion {
         this.contact = contact;
     }
 
+    public int getGender() {
+        return contact;
+    }
+
+    public void setGender(int contact) {
+        this.contact = contact;
+    }
+
     String name;
     int cc;
     int contact;
+    char gender;
 
     @Override
     public String toString() {

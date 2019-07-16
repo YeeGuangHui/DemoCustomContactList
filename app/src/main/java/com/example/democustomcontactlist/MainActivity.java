@@ -24,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         lvContacts=findViewById(R.id.lvContact);
         alContacts=new ArrayList<>();
-        AndroidVersion item1=new AndroidVersion("Mary", 65, 81234567);
+        AndroidVersion item1=new AndroidVersion("Mary", 65, 81234567, 'F');
         alContacts.add(item1);
-        AndroidVersion item2=new AndroidVersion("Tapu", 65, 91122334);
+        AndroidVersion item2=new AndroidVersion("Tapu", 65, 91122334, 'M');
         alContacts.add(item2);
 
         ccContacts=new CustomAdaptor(this, R.layout.row, alContacts);
         lvContacts.setAdapter(ccContacts);
     }
+
 }
